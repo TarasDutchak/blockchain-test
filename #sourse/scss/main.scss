@@ -1,0 +1,79 @@
+// case new elements
+.service-ourworks__bottsect {
+    position: relative;
+    z-index: 2;
+    padding-top: 200px;
+    text-align: center;
+    padding-bottom: 150px;
+
+    a.linkbtn {
+        display: inline-block;
+        letter-spacing: 0.02em;
+        color: #0F0F10;
+        text-align: center;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 130%;
+        padding: 22px 44px;
+        background: linear-gradient(125.34deg, #CDFF7C 14.35%, #8CFFAC 54.63%, #93FFEB 101.27%);
+        font-family: "Montserrat", sans-serif;
+        transition: 0.3s;
+
+        &:hover {
+            box-shadow: 0px 8px 20px rgb(67 253 130 / 25%), 0px 26px 50px #2f463a;
+        }
+    }
+}
+
+.service-ourworks:after {
+    background-repeat: repeat-y;
+    background-position: 0 0, 0 -45px;
+}
+
+.checktestimonialsbox {
+    max-width: 1140px;
+    margin: 150px auto 0;
+
+    a {
+        font-weight: 500;
+        font-size: 72px;
+        line-height: 114%;
+        color: #fff;
+        text-align: left;
+        position: relative;
+        padding-right: 130px;
+        display: block;
+        font-style: italic;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 124px;
+            height: 124px;
+            background: url('../images/arrow_top.png') no-repeat center / 100%;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1800.8px) {
+    .service-ourworks .worksect-container .worksect__picbox.bipic img {
+        width: calc(100% + 100px);
+    }
+}
