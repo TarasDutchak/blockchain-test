@@ -11,7 +11,7 @@
 
                 if (count >= 3) {
                     responsiveArray.push({
-                        breakpoint: 769,
+                        breakpoint: 768,
                         settings: {
                             slidesToShow: 2,
                             slidesToScroll: 1,
@@ -133,16 +133,16 @@
     );
 
 
-    // $('.header__burger').click(
-    //     function () {
-    //         $('header.header').toggleClass('header__blackcolor');
-    //         $('.header__message').toggle();
-    //         $(window).scrollTop(0);
-    //         $('body').toggleClass('noscroll')
-    //         $(this).toggleClass('open');
-    //         $('.header.header .header__nav').toggleClass('show');
-    //     }
-    // );
+    $('.header__burger').click(
+        function () {
+            $('header.header').toggleClass('header__blackcolor');
+            $('.header__message').toggle();
+            $(window).scrollTop(0);
+            $('body').toggleClass('noscroll')
+            $(this).toggleClass('open');
+            $('.header.header .header__nav').toggleClass('show');
+        }
+    );
 
     $('.testimonialslider').slick({
         slidesToShow: 3,
@@ -160,6 +160,12 @@
                 settings: {
                     slidesToShow: 1,
                     adaptiveHeight: true
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    settings: "unslick"
                 }
             }
 
@@ -203,6 +209,18 @@
             },
         ]
     });
+
+
+
+    $(document).ready(function () {
+
+
+
+
+
+
+    });
+
 
 
 

@@ -22,6 +22,7 @@
         .footlist {
             max-width: 400px;
             width: 100%;
+
             .title {
                 margin-bottom: 28px;
                 font-weight: 700;
@@ -164,4 +165,140 @@
 .footwrappsect {
     max-width: 1492px;
     margin: 0 auto;
+}
+
+footer.footer .socicons {
+    display: none;
+}
+
+
+@media(max-width:1600.8px) {
+
+    .footer__content .footleftsect .footlist .title {
+        font-size: 20px;
+    }
+
+    .footer__content .footleftsect .footlist ul li a {
+        font-size: 16px;
+    }
+
+    .footer__bottomsect ul li a {
+        font-size: 16px;
+    }
+
+    .footer__bottomsect .footer__bottomsect-center,
+    .footer__bottomsect p {
+        font-size: 16px;
+    }
+
+    .footer__bottomsect .footer__bottomsect-center i {
+        margin-top: 15px;
+    }
+
+
+}
+
+@media(max-width:1199.8px) {
+    .footer__bottomsect>* {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .footer__bottomsect {
+        text-align: center;
+    }
+
+    .footer__bottomsect ul {
+        margin-bottom: 20px;
+        order: 1;
+    }
+
+    .footer__bottomsect .footer__bottomsect-center {
+        order: 3;
+    }
+
+    .footer__bottomsect p {
+        text-align: center;
+        margin-top: 10px;
+        order: 2;
+    }
+}
+
+@media(max-width:991.8px) {
+    .footer__content {
+        padding-top: 100px;
+    }
+}
+
+@media(max-width:767.8px) {
+    .footer__content .footleftsect,
+    .footer__content .footrightsect {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .footer__content .serviserow {
+        flex-wrap: wrap;
+    }
+
+    .footer__content .footrightsect {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer__bottomsect {
+        margin-top: 70px;
+    }
+
+
+
+}
+
+@media(max-width:575.8px) {
+    .footer__content {
+        padding-top: 40px;
+    }
+
+    .footer__content .footleftsect .footlist {
+        max-width: 100%;
+    }
+
+    .footer__content .footleftsect {
+        flex-wrap: wrap;
+    }
+
+    .footer__content .footleftsect .footlist .title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    footer.footer .socicons {
+        display: flex;
+        margin-top: 15px !important;
+        margin-bottom: 30px !important;
+
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 17px;
+        }
+    }
+
+    .footer__content .footleftsect .footlist .title img {
+        vertical-align: middle;
+    }
+
+    .footer__content .footrightsect {
+        margin-top: 60px;
+    }
+
+    .footer__content .footrightsect {
+        text-align: left;
+    }
+    
+    .footer__bottomsect {
+        margin-top: 30px;
+    }
+
+
 }
