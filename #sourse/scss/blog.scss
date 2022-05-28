@@ -193,6 +193,49 @@
     }
 }
 
+.postssection.whiteboxes {
+    .postbox .postbox__descrwrap {
+        background: #fff;
+    }
+
+    .postbox .postbox__descrwrap .postbox__tags {
+        a {
+            color: #0F0F10;
+        }
+    }
+
+    .postbox .postbox__descrwrap .postbox__title {
+        color: #0F0F10;
+    }
+
+    .postbox .postbox__descrwrap .postbox__descr p {
+        color: #0F0F10;
+    }
+
+    .postbox .postbox__descrwrap .postbox__bottblock span {
+
+        &:nth-child(1),
+        &:nth-child(2) {
+            color: #0F0F10;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
 
 
 
