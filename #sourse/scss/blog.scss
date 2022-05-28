@@ -13,6 +13,18 @@
         height: 100%;
     }
 
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: url('../images/postgrain.png');
+        z-index: 1;
+    }
+
     h1 {
         background: linear-gradient(125.34deg, #CDFF7C 14.35%, #8CFFAC 54.63%, #93FFEB 101.27%);
         -webkit-background-clip: text;
@@ -42,22 +54,24 @@
         }
     }
 
-    .postssection {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: -30px;
-        padding-right: -30px;
+   
 
-        .postssection__col {
-            position: relative;
-            padding-left: 30px;
-            padding-right: 30px;
-            width: 100%;
-            max-width: 50%;
-            flex: 0 0 50%;
-        }
+}
+
+.postssection {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    padding-right: -30px;
+
+    .postssection__col {
+        position: relative;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 100%;
+        max-width: 50%;
+        flex: 0 0 50%;
     }
-
 }
 
 .postbox {
@@ -296,12 +310,12 @@
 
 @media(max-width:1199.8px) {
 
-    .blogcontent .postssection {
+  .postssection {
         margin-left: -15px;
         margin-right: -15px;
     }
 
-    .blogcontent .postssection .postssection__col {
+  .postssection .postssection__col {
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -368,7 +382,7 @@
         margin-bottom: 40px;
     }
 
-    .blogcontent .postssection .postssection__col {
+    .postssection .postssection__col {
         max-width: 100%;
         flex: 0 0 100%;
     }
