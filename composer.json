@@ -1,0 +1,19 @@
+{
+    "name": "cryptomind/assets",
+    "type": "theme-assets",
+    "description": "WordPress theme resources",
+    "keywords": ["WordPress", "Themes", "HTML", "CSS", "JavaScript"],
+    "homepage": "https://weblorem.com",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Taras Dutchak",
+            "homepage": "https://github.com/TarasDutchak/",
+            "email": "dutchak.t@weblorem.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "composer/installers": "^2.1"
+    }
+}

@@ -67,6 +67,51 @@
     display: none;
 }
 
+.header__chat {
+    a {
+        span, svg path {
+            transition: 0.3s;
+        }
+
+        &:hover {
+            span {
+                color: #C9FA3D;
+            }
+
+            svg path {
+                stroke: #C9FA3D;
+            }
+        }
+    }
+}
+
+.header.header .header__nav ul.header__menu>li>a {
+    transition: 0.3s;
+
+    &:hover {
+        color: #C9FA3D;
+    }
+}
+
+.service-postbox .postbox__wrapper .hirebox a {
+    position: relative;
+    z-index: 2;
+}
+
+.service-postbox .postbox__wrapper .textbox a {
+    transition: 0.3s;
+
+    &:hover {
+        box-shadow: 0px 8px 20px rgb(67 253 130 / 25%), 0px 26px 50px #2f463a;
+    }
+}
+
+
+
+
+// box-shadow: 0px 8px 20px rgb(67 253 130 / 25%), 0px 26px 50px #2f463a;
+
+
 
 @media(max-width:1600.8px) {
     .service-ourworks__bottsect {
