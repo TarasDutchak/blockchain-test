@@ -212,7 +212,65 @@
 
 
 
+
+
     $(document).ready(function () {
+
+        $(document).on('change', ':file', function () {
+            var input = $(this),
+                numFiles = input.get(0).files ? input.get(0).files.length : 1,
+                label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+            input.trigger('fileselect', [numFiles, label]);
+        });
+
+        $(document).ready(function () {
+            $(':file').on('fileselect', function (event, numFiles, label) {
+                $('label span').text(label);
+                $('label span').addClass('active');
+            });
+        });
+
+
+
+        // tabs
+        $('.tabsheader__btn').click(function (e) {
+            e.preventDefault();
+            $('.tabsheader__btn').removeClass('active');
+            $(this).addClass('active');
+        });
+
+        $('.tabsheader__btn.btn1').click(function () {
+            $('.tabsbody__tabcontent').removeClass('hide');
+            $('.tabsbody__tabcontent.tbcont2').addClass('hide');
+        });
+        $('.tabsheader__btn.btn2').click(function () {
+            $('.tabsbody__tabcontent').removeClass('hide');
+            $('.tabsbody__tabcontent.tbcont1').addClass('hide');
+        });
+
+        var textarea = document.querySelector('textarea');
+
+        textarea.addEventListener('keyup', function () {
+            if (this.scrollTop > 0) {
+                this.style.height = this.scrollHeight + "px";
+            }
+        });
+
+        // modal
+
+        $('.modalsect a').click(function (e) {
+            e.preventDefault();
+            $('.modalwrapper').hide();
+        });
+
+
+
+
+
+
+
+
+
 
 
 
