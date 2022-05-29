@@ -248,13 +248,19 @@
             $('.tabsbody__tabcontent.tbcont1').addClass('hide');
         });
 
-        var textarea = document.querySelector('textarea');
 
-        textarea.addEventListener('keyup', function () {
-            if (this.scrollTop > 0) {
-                this.style.height = this.scrollHeight + "px";
-            }
-        });
+
+        if ($('textarea').length) {
+            var textarea = document.querySelector('textarea');
+
+            textarea.addEventListener('keyup', function () {
+                if (this.scrollTop > 0) {
+                    this.style.height = this.scrollHeight + "px";
+                }
+            });
+        }
+
+
 
         // modal
 
