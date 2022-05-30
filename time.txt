@@ -2,6 +2,6 @@
 
 13.42 - 17,41 = 4 (main adaptive, + testimonials)
 
-сб. 8,24 - 11.30 = 3 (blog, blog open (post))
+сб. 8,24 - 12.36 = 4 (blog, blog open (post))
 
-нд. 10,00 - 
+нд. 9,00 - 12.50 = 3.50 (faq, popup)
