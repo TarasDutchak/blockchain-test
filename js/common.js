@@ -213,23 +213,30 @@
 
 
 
+    $(document).on('change', ':file', function () {
+        var input = $(this),
+            numFiles = input.get(0).files ? input.get(0).files.length : 1,
+            label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+        input.trigger('fileselect', [numFiles, label]);
+    });
 
     $(document).ready(function () {
-
-        $(document).on('change', ':file', function () {
-            var input = $(this),
-                numFiles = input.get(0).files ? input.get(0).files.length : 1,
-                label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
-            input.trigger('fileselect', [numFiles, label]);
+        $(':file').on('fileselect', function (event, numFiles, label) {
+            $('label span text').text(label);
+            $('label span').addClass('active');
         });
 
-        $(document).ready(function () {
-            $(':file').on('fileselect', function (event, numFiles, label) {
-                $('label span').text(label);
-                $('label span').addClass('active');
-            });
-        });
+        // $('.submformbtn').click(function (e) {
+        //     e.preventDefault();
+        //     $('#file-upload').val('')
+        //     $('label span text').text('Attach File');
+        //     $('label span').removeClass('active');
+        // })
 
+    });
+
+
+    $(document).ready(function () {
 
 
         // tabs
@@ -261,13 +268,6 @@
         }
 
 
-
-        // modal
-
-        $('.modalsect a').click(function (e) {
-            e.preventDefault();
-            $('.modalwrapper').hide();
-        });
 
 
 
