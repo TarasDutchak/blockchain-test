@@ -226,13 +226,6 @@
             $('label span').addClass('active');
         });
 
-        // $('.submformbtn').click(function (e) {
-        //     e.preventDefault();
-        //     $('#file-upload').val('')
-        //     $('label span text').text('Attach File');
-        //     $('label span').removeClass('active');
-        // })
-
     });
 
 
@@ -247,12 +240,18 @@
         });
 
         $('.tabsheader__btn.btn1').click(function () {
-            $('.tabsbody__tabcontent').removeClass('hide');
-            $('.tabsbody__tabcontent.tbcont2').addClass('hide');
+            $('.tabsbody__tabcontent').addClass('hide');
+            $('.tabsbody__tabcontent.tbcont1').removeClass('hide');
         });
+
         $('.tabsheader__btn.btn2').click(function () {
-            $('.tabsbody__tabcontent').removeClass('hide');
-            $('.tabsbody__tabcontent.tbcont1').addClass('hide');
+            $('.tabsbody__tabcontent').addClass('hide');
+            $('.tabsbody__tabcontent.tbcont2').removeClass('hide');
+        });
+
+        $('.tabsheader__btn.btn3').click(function () {
+            $('.tabsbody__tabcontent').addClass('hide');
+            $('.tabsbody__tabcontent.tbcont3').removeClass('hide');
         });
 
 
