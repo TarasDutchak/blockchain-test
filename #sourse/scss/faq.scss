@@ -61,12 +61,14 @@
         padding: 122px 116px;
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
+        align-items: flex-start;
 
         .faqformsection__left {
             width: 100%;
             max-width: 52%;
             flex: 0 0 52%;
+            padding-top: 80px;
+            padding-bottom: 110px;
 
             h2 {
                 color: #010101;
@@ -406,7 +408,10 @@
         padding-right: 50px;
     }
 
-
+    .faqformwrapper .faqformsection .faqformsection__left {
+        min-height: 450px;
+        padding-bottom: 0;
+    }
 
 
 
@@ -415,7 +420,6 @@
     }
 
 }
-
 
 @media(max-width:1399.8px) {
 
@@ -457,7 +461,11 @@
         padding: 60px;
     }
 
-
+    .faqformwrapper .faqformsection .faqformsection__left {
+        min-height: initial;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
 
 
 
