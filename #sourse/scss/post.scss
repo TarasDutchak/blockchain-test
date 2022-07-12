@@ -211,23 +211,6 @@
     h2 {
         margin: 50px 0 60px;
         position: relative;
-
-        &::after {
-            content: '';
-            z-index: -1;
-            display: block;
-            position: absolute;
-            left: -28px;
-            top: 0;
-            width: 60%;
-            height: calc(100% + 13px);
-            border: 2px solid;
-            border-image-slice: 1;
-            border-width: 2px;
-            border-image-source: linear-gradient(125.34deg, #CDFF7C 14.35%, #8CFFAC 54.63%, #93FFEB 101.27%);
-            border-top: none;
-            border-right: none;
-        }
     }
 
     .postgetconsultation {
@@ -285,20 +268,29 @@
     }
 
     blockquote {
+        margin: 50px 0 60px;
         position: relative;
-        margin: 0;
-        padding: 5px 5px 5px 20px;
-        font-style: italic;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 130%;
+        color: #000000;
+        opacity: 0.8;
 
         &::after {
-            content: '';
-            display: inline-block;
-            width: 2px;
-            height: 100%;
-            background: linear-gradient(125.34deg, #CDFF7C 14.35%, #8CFFAC 54.63%, #93FFEB 101.27%);
+            content: "";
+            z-index: -1;
+            display: block;
             position: absolute;
-            left: 0;
+            left: -28px;
             top: 0;
+            width: 60%;
+            height: calc(100% + 13px);
+            border: 2px solid;
+            border-image-slice: 1;
+            border-width: 2px;
+            border-image-source: linear-gradient(125.34deg, #CDFF7C 14.35%, #8CFFAC 54.63%, #93FFEB 101.27%);
+            border-top: none;
+            border-right: none;
         }
     }
 
@@ -744,6 +736,10 @@
         font-size: 32px;
     }
 
+    .postmiansectbody__post  blockquote {
+        font-size: 32px;
+    }
+
     .postmiansectbody__post h3 {
         font-size: 30px;
     }
@@ -779,6 +775,8 @@
         font-size: 42px;
         margin-bottom: 20px;
     }
+
+
 
     .postreadreview .descr p {
         font-size: 18px;
@@ -989,12 +987,17 @@
     }
 
     .postmiansectbody__post h2 {
-        padding-left: 28px;
+        padding-left: 0px;
         font-size: 36px;
         line-height: 130%
     }
-
-    .postmiansectbody__post h2:after {
+    
+    .postmiansectbody__post blockquote {
+        padding-left: 28px;
+        font-size: 28px;
+        line-height: 130%
+    }
+    .postmiansectbody__post blockquote:after {
         left: 0;
         top: 0;
         width: 100%;
