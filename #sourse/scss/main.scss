@@ -106,12 +106,35 @@
     }
 }
 
+// background: linear-gradient(125.34deg,#CDFF7C 14.35%,#8CFFAC 54.63%,#93FFEB 101.27%);
+
+// img link
+.piclink {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 430px;
+    height: 250px;
+    position: absolute;
+    filter: drop-shadow(12px 12px 18px rgba(0,0,0,0.25));
+    transform: rotate(15.64deg);
+    bottom: -215px;
+    right: -125px;
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
 
 
 
-// box-shadow: 0px 8px 20px rgb(67 253 130 / 25%), 0px 26px 50px #2f463a;
-
-
+@media(max-width:1700.8px) {
+    .piclink {
+        bottom: -185px;
+        right: -55px;
+    }
+}
 
 @media(max-width:1600.8px) {
     .service-ourworks__bottsect {
@@ -135,7 +158,12 @@
         padding-bottom: 100px;
     }
 
-
+    .piclink {
+        width: 290px;
+        height: 220px;
+        bottom: -135px;
+        right: 30px;
+    }
 
 
 }
@@ -206,7 +234,12 @@
         margin: 0;
     }
 
-
+    .piclink {
+        width: 240px;
+        height: 170px;
+        bottom: -55px;
+        right: -20px;
+    }
 
 
 
@@ -233,6 +266,11 @@
     }
 
 
+    .piclink {
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+    }
 
 
 
@@ -426,4 +464,15 @@
     .service-testimonials {
         background: #000;
     }
+
+
+    .piclink {
+        width: 220px;
+        height: 160px;
+        bottom: 0;
+        right: initial;
+        left: initial;
+        top: 20px;
+    }
+
 }

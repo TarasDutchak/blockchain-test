@@ -239,19 +239,19 @@
             }
         }
 
-        &::after {
-            content: '';
-            display: inline-block;
-            width: 363px;
-            height: 193px;
-            background: url('../images/badge.png') no-repeat center / 100%;
-            position: absolute;
+        // &::after {
+        //     content: '';
+        //     display: inline-block;
+        //     width: 363px;
+        //     height: 193px;
+        //     background: url('../images/badge.png') no-repeat center / 100%;
+        //     position: absolute;
 
-            filter: drop-shadow(12px 12px 18px rgba(0, 0, 0, 0.25));
-            transform: rotate(15.64deg);
-            bottom: -190px;
-            right: -90px;
-        }
+        //     filter: drop-shadow(12px 12px 18px rgba(0, 0, 0, 0.25));
+        //     transform: rotate(15.64deg);
+        //     bottom: -190px;
+        //     right: -90px;
+        // }
     }
 
 
@@ -1373,10 +1373,10 @@
 }
 
 @media(max-width:1700.8px) {
-    .service-whatwedo .devservices:after {
-        bottom: -160px;
-        right: -20px;
-    }
+    // .service-whatwedo .devservices:after {
+    //     bottom: -160px;
+    //     right: -20px;
+    // }
 
 }
 
@@ -1440,15 +1440,15 @@
         margin-bottom: 20px;
     }
 
-    .service-whatwedo .devservices:after {
-        width: 300px;
-        height: 160px;
-    }
+    // .service-whatwedo .devservices:after {
+    //     width: 300px;
+    //     height: 160px;
+    // }
 
-    .service-whatwedo .devservices:after {
-        bottom: -110px;
-        right: 20px;
-    }
+    // .service-whatwedo .devservices:after {
+    //     bottom: -110px;
+    //     right: 20px;
+    // }
 
     .servoperateslider__box .num {
         font-size: 90px;
@@ -1745,10 +1745,10 @@
         padding: 0 15px;
     }
 
-    .service-whatwedo .devservices:after {
-        bottom: -90px;
-        right: -20px;
-    }
+    // .service-whatwedo .devservices:after {
+    //     bottom: -90px;
+    //     right: -20px;
+    // }
 
     .service-welcomesection {
         background: #0F0F10;
@@ -1828,14 +1828,14 @@
 
 
 
-    .service-whatwedo .devservices:after {
-        width: 240px;
-        height: 140px;
-    }
+    // .service-whatwedo .devservices:after {
+    //     width: 240px;
+    //     height: 140px;
+    // }
 
-    .service-whatwedo .devservices:after {
-        bottom: -40px;
-    }
+    // .service-whatwedo .devservices:after {
+    //     bottom: -40px;
+    // }
 
     .servoperatesl-wrapper .linepoints span:nth-child(4) {
         display: none;
@@ -1985,11 +1985,11 @@
         flex: 0 0 100%;
     }
 
-    .service-whatwedo .devservices:after {
-        position: relative;
-        right: 0;
-        margin: 0 auto;
-    }
+    // .service-whatwedo .devservices:after {
+    //     position: relative;
+    //     right: 0;
+    //     margin: 0 auto;
+    // }
 
     .servoperatesl-wrapper .linepoints span:nth-child(3) {
         display: none;
@@ -2130,14 +2130,14 @@
         line-height: 160%;
     }
 
-    .service-whatwedo .devservices:after {
-        bottom: 0;
-        margin-top: 48px;
-    }
+    // .service-whatwedo .devservices:after {
+    //     bottom: 0;
+    //     margin-top: 48px;
+    // }
 
-    .service-whatwedo .devservices:after {
-        transform: rotate(5.64deg);
-    }
+    // .service-whatwedo .devservices:after {
+    //     transform: rotate(5.64deg);
+    // }
 
     .servoperateslider__box .num {
         text-align: left;
