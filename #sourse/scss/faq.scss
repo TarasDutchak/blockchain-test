@@ -29,6 +29,7 @@
     p.faqsubtitle {
         background: linear-gradient(125.34deg, #CDFF7C 14.35%, #8CFFAC 54.63%, #93FFEB 101.27%);
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
         position: relative;
         z-index: 2;
