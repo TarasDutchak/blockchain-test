@@ -2635,7 +2635,7 @@
     .service-testimonials:after {
         background-image: url(../images/grain1.png), url(../images/grid.png);
         background-size: auto;
-        background-position: left top-3px;
+        background-position: left top -3px;
         background-repeat: repeat, no-repeat;
     }
 
