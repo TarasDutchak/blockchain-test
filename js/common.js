@@ -234,7 +234,7 @@
 
         // tabs
         $('.tabsheader__btn').click(function (e) {
-            e.preventDefault();
+            // e.preventDefault();
             $('.tabsheader__btn').removeClass('active');
             $(this).addClass('active');
         });
@@ -305,7 +305,8 @@
 }(jQuery));
 
 {
-    /* <a href="faq.html#sectab" class="extra-tab">sdsdssssssssssss</a> */ }
+    /* <a href="faq.html#sectab" class="extra-tab">link</a> */
+}
 
 document.addEventListener("DOMContentLoaded", function () {
     if ('#sectab' === window.location.hash) {
