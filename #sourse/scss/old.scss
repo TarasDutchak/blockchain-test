@@ -129,7 +129,7 @@
     }
 
     .service-welcomesection__ratedsection {
-        a {
+        .ratedboxwrap {
             display: block;
             width: 25%;
             text-align: center;
@@ -1943,7 +1943,7 @@
     .service-welcomesection .service-welcomesection__ratedsection {
         flex-wrap: wrap;
 
-        a {
+        .ratedboxwrap {
             width: 50%;
             margin-bottom: 30px;
 
@@ -2100,7 +2100,7 @@
         padding: 32px 15px;
     }
 
-    .service-welcomesection .service-welcomesection__ratedsection a {
+    .service-welcomesection .service-welcomesection__ratedsection .ratedboxwrap {
 
         &:nth-child(3),
         &:nth-child(4) {
