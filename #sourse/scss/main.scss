@@ -603,3 +603,116 @@
 .service-postbox .postbox__wrapper .hirebox a {
     z-index: 1;
 }
+
+
+
+.service-ourworks .worksect,
+.service-postbox {
+    overflow: hidden;
+}
+
+.postbox__wrapper:not(.circles) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+       
+
+        .textbox {
+            width: 100%;
+            max-width: 818px;
+            flex: 0 0 818px;
+
+            .descr {
+                max-width: 100%;
+            }
+        }
+
+        .imgbox {
+            width: 100%;
+            max-width: calc(100% - 818px);
+            flex: 0 0 calc(100% - 818px);
+
+            img {
+                right: -130px;
+                bottom: initial;
+                position: relative;
+                max-width: 513px;
+            }
+        }
+
+    
+}
+
+@media(max-width:1750.8px) {
+    .postbox__wrapper:not(.circles) .imgbox img {
+        right: -70px;
+        max-width: 450px;
+    }
+}
+
+@media(max-width:1600.8px) {
+    .postbox__wrapper:not(.circles) .imgbox {
+        text-align: right;
+
+        img {
+            right: -120px;
+            max-width: 450px;
+        }
+    }
+
+    .postbox__wrapper:not(.circles) .textbox {
+        max-width: 60%;
+        flex: 0 0 60%;
+    }
+
+    .postbox__wrapper:not(.circles) .imgbox {
+        max-width: 40%;
+        flex: 0 0 40%;
+    }
+}
+
+@media(max-width:1300.8px)  {
+    .postbox__wrapper:not(.circles) .imgbox img {
+        max-width: 400px;
+    }
+}
+
+@media(max-width:1199.8px)  {
+    .postbox__wrapper:not(.circles) .imgbox img {
+        max-width: 100%;
+        right: -30px;
+    }
+}
+
+@media(max-width:991.8px)  {
+    .postbox__wrapper:not(.circles) .textbox,
+    .postbox__wrapper:not(.circles) .imgbox {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .postbox__wrapper:not(.circles) .imgbox img {
+        position: absolute;
+        bottom: -50px;
+    }
+
+    .postbox__wrapper:not(.circles) .textbox {
+        padding-bottom: 60px;
+    }
+}
+
+@media(max-width:575.8px)  {
+    .postbox__wrapper:not(.circles) .imgbox img {
+        position: relative;
+        bottom: initial;
+        right: 0;
+    }
+
+    .postbox__wrapper:not(.circles) .imgbox {
+        text-align: center;
+    }
+
+    .postbox__wrapper:not(.circles) .textbox {
+        padding-bottom: 0;
+    }
+}
